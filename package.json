@@ -1,0 +1,23 @@
+{
+  "name": "2410http",
+  "version": "1.0.0",
+  "description": "Project of the learn HTTP course",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anqiwoo/web-link-analyzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anqiwoo/web-link-analyzer/issues"
+  },
+  "homepage": "https://github.com/anqiwoo/web-link-analyzer#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
