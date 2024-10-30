@@ -1,4 +1,5 @@
 const { crawlPage } = require("./crawl.js");
+const { printReport } = require("./report.js");
 
 async function main() {
   if (process.argv.length < 3) {
@@ -11,10 +12,7 @@ async function main() {
   const baseURL = process.argv[2];
   console.log(`Starting crawling of ${baseURL} ...`);
   const crawledPageCountMap = await crawlPage(baseURL, baseURL, {});
-
-  for (const pageCount of Object.entries(crawledPageCountMap)) {
-    console.log(`Page: ${pageCount[0]} was crawled ${pageCount[1]} times`);
-  }
+  printReport(crawledPageCountMap);
 }
 
 main();
